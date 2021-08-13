@@ -28,6 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     @Override
+    @Transactional
     public List<Employee> findByPos(String pos) {
         return employeeDAO.findByPos(pos);
     }
